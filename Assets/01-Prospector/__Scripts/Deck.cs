@@ -142,10 +142,7 @@ public class Deck : MonoBehaviour {
 
 
 	/// <summary>
-    /// This is the first edition version of MakeCards - ot does ALL THE WORK
-    ///
-    /// In the second edition JGB splits this into multiple functions that get called
-    /// to complete the task
+    /// ot does ALL THE WORK
     /// </summary>
 	public void MakeCards() {
 		// stub Add the code from page 577 here
