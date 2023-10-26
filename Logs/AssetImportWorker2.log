@@ -838,3 +838,169 @@ Received Import Request.
 Start importing Assets/01-Prospector/__Scripts/CardProspector.cs using Guid(98e12cc4a8de94f4b89d6c4ec6aeae31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c8c9262e6df563905208c438ea1feb') in 0.001051 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 236.784347 seconds.
+  path: Assets/01-Prospector/__Scripts/CardProspector.cs
+  artifactKey: Guid(98e12cc4a8de94f4b89d6c4ec6aeae31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/__Scripts/CardProspector.cs using Guid(98e12cc4a8de94f4b89d6c4ec6aeae31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16807d610eb531e060e6cb7455272f2') in 0.000776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 573.709429 seconds.
+  path: Assets/mainScene.unity
+  artifactKey: Guid(f126f207300ec4022bbd7d71b769f57c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/mainScene.unity using Guid(f126f207300ec4022bbd7d71b769f57c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '653b2623f986f94f7ffe362b62cd1e29') in 0.325409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/01-Prospector/_Sprites/FaceCard_13D.png
+  artifactKey: Guid(6f1efb7f571f948dfa995e521af3100a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/FaceCard_13D.png using Guid(6f1efb7f571f948dfa995e521af3100a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '58d7c637f3dce1ef2665c9a6855cadfd') in 0.239330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/01-Prospector/_Sprites/Club.png
+  artifactKey: Guid(f2e3abd22e9ae4d17ab5c0659ff3e024) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/Club.png using Guid(f2e3abd22e9ae4d17ab5c0659ff3e024) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '725283816ebac5f97f6e230bcb276365') in 0.139328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/01-Prospector/_Prefabs/PrefabCard.prefab
+  artifactKey: Guid(ee93767be21efa14eaa16db1093e90b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Prefabs/PrefabCard.prefab using Guid(ee93767be21efa14eaa16db1093e90b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '02fc24c962815210e36fce04cb78615c') in 0.139884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/01-Prospector/Resources/DeckXML.xml
+  artifactKey: Guid(c76312a0fb08948699e1abf935e4a957) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/Resources/DeckXML.xml using Guid(c76312a0fb08948699e1abf935e4a957) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '624a3eda0831cb1b44f4852a32ee5414') in 0.030958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/01-Prospector/Resources/LayoutXML.xml
+  artifactKey: Guid(61f3f05951a2f4d98b35bddbc7549908) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/Resources/LayoutXML.xml using Guid(61f3f05951a2f4d98b35bddbc7549908) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '84337454c7ac2dbd981221775c9bd33f') in 0.046813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/01-Prospector/_Sprites/Card_Front.png
+  artifactKey: Guid(873a7658b7ec742228520c7b15510f4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/Card_Front.png using Guid(873a7658b7ec742228520c7b15510f4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '205108fb65cbe54deda7db44328ebee1') in 0.086563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/01-Prospector/_Sprites/FaceCard_13S.png
+  artifactKey: Guid(a61ea2d4e7838406b97649cd8a3f3f34) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/FaceCard_13S.png using Guid(a61ea2d4e7838406b97649cd8a3f3f34) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '911b7b77a1dba35d938480c828086aa0') in 0.089206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/01-Prospector/__Scripts/CardProspector.cs
+  artifactKey: Guid(98e12cc4a8de94f4b89d6c4ec6aeae31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/__Scripts/CardProspector.cs using Guid(98e12cc4a8de94f4b89d6c4ec6aeae31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '62747f234b2f3891d1134481a33c1dec') in 0.066735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/01-Prospector/_Sprites/FaceCard_13H.png
+  artifactKey: Guid(ef50d4f09a2b3425fbbdb8ad5f8957b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/FaceCard_13H.png using Guid(ef50d4f09a2b3425fbbdb8ad5f8957b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e9c0b405c1132cb0d88453e9c7af68c1') in 0.090116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/01-Prospector/__Scripts/Utils.cs
+  artifactKey: Guid(c78e537984e8e4215a5293992c3edd35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/__Scripts/Utils.cs using Guid(c78e537984e8e4215a5293992c3edd35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '97410f8a2373d160ae0eb87811cb6f35') in 0.024004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/01-Prospector/_Sprites/ProspectorBackground Mat.mat
+  artifactKey: Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/ProspectorBackground Mat.mat using Guid(c8ca95433cc67409b8b7e8c5fed52cce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1ec256f97b62e921d905c9cc696d0b67') in 0.050488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/01-Prospector/_Sprites/FaceCard_11D.png
+  artifactKey: Guid(c10418368653749f796f63e87cde78ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/FaceCard_11D.png using Guid(c10418368653749f796f63e87cde78ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fef02eda06a78bb5e2dc2a11fea33d11') in 0.070930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/01-Prospector/Lighting/__ProspectorSettings.lighting
+  artifactKey: Guid(b1d9b7b3d3c924a9293df3832746ca37) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/Lighting/__ProspectorSettings.lighting using Guid(b1d9b7b3d3c924a9293df3832746ca37) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ab93baef0405b1d1b6cde3a2e8ac6457') in 0.044055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/01-Prospector/_Sprites/FaceCard_12H.png
+  artifactKey: Guid(ee100e0d0a1c04759a5a7537cf5e8752) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/FaceCard_12H.png using Guid(ee100e0d0a1c04759a5a7537cf5e8752) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b777316258d70f671c567dd29c1d972b') in 0.080321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/01-Prospector/__Scripts/Card.cs
+  artifactKey: Guid(100a12af089e19845beeba3dc7d93c78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/__Scripts/Card.cs using Guid(100a12af089e19845beeba3dc7d93c78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '9f3824d3262419544b3cdfab5d8c3c5f') in 0.042403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/01-Prospector/_Sprites/FaceCard_11H.png
+  artifactKey: Guid(21a6739a4135346e6956ca54075d8c25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/FaceCard_11H.png using Guid(21a6739a4135346e6956ca54075d8c25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '7ae942fb2ffc61f3f74c20ca74c0e657') in 0.080305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/01-Prospector/_Sprites/ProspectorBackground.png
+  artifactKey: Guid(410722e641735434fa9000d31a38bd1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/_Sprites/ProspectorBackground.png using Guid(410722e641735434fa9000d31a38bd1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ec8acf5d0c7dacbc5de6dc202d1e26bf') in 0.086549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/01-Prospector/__Scripts/Layout.cs
+  artifactKey: Guid(cb38e1273901d934187adb8c3ae787ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/01-Prospector/__Scripts/Layout.cs using Guid(cb38e1273901d934187adb8c3ae787ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'af3d2bc7a3826f1314c6913add6f00f4') in 0.040542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
