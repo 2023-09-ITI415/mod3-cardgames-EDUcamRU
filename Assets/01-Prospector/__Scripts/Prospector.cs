@@ -5,40 +5,42 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class Prospector : MonoBehaviour {
+public class Prospector : MonoBehaviour
+{
 
-	static public Prospector 	S;
+    static public Prospector S;
 
-	[Header("Set in Inspector")]
-	public TextAsset			deckXML;
-	public TextAsset			layoutXML;
-	public float                xOffset = 3;
-	public float                yOffset = -2.5f;
-	public Vector3              layoutCenter;
-    public Vector2              fsPosMid = new Vector2(0.5f, 0.90f);
-    public Vector2              fsPosRun = new Vector2(0.5f, 0.75f);
-    public Vector2              fsPosMid2 = new Vector2(0.4f, 1.0f);
-    public Vector2              fsPosEnd = new Vector2(0.5f, 0.95f);
-    public float                reloadDelay = 2f; // 2 seconds between rounds
-    public Text                 gameOverText, roundResultText, highScoreText;
+    [Header("Set in Inspector")]
+    public TextAsset deckXML;
+    public TextAsset layoutXML;
+    public float xOffset = 3;
+    public float yOffset = -2.5f;
+    public Vector3 layoutCenter;
+    public Vector2 fsPosMid = new Vector2(0.5f, 0.90f);
+    public Vector2 fsPosRun = new Vector2(0.5f, 0.75f);
+    public Vector2 fsPosMid2 = new Vector2(0.4f, 1.0f);
+    public Vector2 fsPosEnd = new Vector2(0.5f, 0.95f);
+    public float reloadDelay = 2f; // 2 seconds between rounds
+    public Text gameOverText, roundResultText, highScoreText;
 
-	[Header("Set Dynamically")]
-	public Deck					deck;
-	public Layout				layout;
-	public List<CardProspector> drawPile;
-	public Transform			layoutAnchor;
-	public CardProspector		target;
-	public List<CardProspector> tableau;
-	public List<CardProspector> discardPile;
-    public FloatingScore		fsRun;
+    [Header("Set Dynamically")]
+    public Deck deck;
+    public Layout layout;
+    public List<CardProspector> drawPile;
+    public Transform layoutAnchor;
+    public CardProspector target;
+    public List<CardProspector> tableau;
+    public List<CardProspector> discardPile;
+    public FloatingScore fsRun;
 
-	void Awake(){
-		S = this;
+    void Awake()
+    {
+        S = this;
         SetUpUITexts();
-	}
+    }
     void SetUpUITexts()
     {
-                // Set up the HighScore UI Text
+        // Set up the HighScore UI Text
         GameObject go = GameObject.Find("HighScore");
         if (go != null)
         {
@@ -67,50 +69,51 @@ public class Prospector : MonoBehaviour {
         gameOverText.gameObject.SetActive(show);
         roundResultText.gameObject.SetActive(show);
     }
-    }
-	void Start() {
+
+    void Start()
+    {
         Scoreboard.S.score = ScoreManager.SCORE;
-		deck = GetComponent<Deck> ();
-		deck.InitDeck (deckXML.text);
-		Deck.Shuffle(ref deck.cards);
-		//a 
-		//Card c;
-		//for (int cNum = 0; cNum<deck.cards.Count; cNum++)
-		//{
+        deck = GetComponent<Deck>();
+        deck.InitDeck(deckXML.text);
+        Deck.Shuffle(ref deck.cards);
+        //a 
+        //Card c;
+        //for (int cNum = 0; cNum<deck.cards.Count; cNum++)
+        //{
         //    c = deck.cards[cNum];
         //    c.transform.localPosition = new Vector3 ((cNum % 13) * 3, cNum / 13 * 4, 0);
-       // }
-	    layout = GetComponent<Layout>(); // Get the Layout component
-		layout.ReadLayout(layoutXML.text); // Pass LayoutXML to it
+        // }
+        layout = GetComponent<Layout>(); // Get the Layout component
+        layout.ReadLayout(layoutXML.text); // Pass LayoutXML to it
 
-		drawPile = ConvertListCardsToListCardProspectors(deck.cards);
-		LayoutGame();
-	}
+        drawPile = ConvertListCardsToListCardProspectors(deck.cards);
+        LayoutGame();
+    }
 
-	List<CardProspector> ConvertListCardsToListCardProspectors(List<Card> lCD)
-	{
+    List<CardProspector> ConvertListCardsToListCardProspectors(List<Card> lCD)
+    {
         List<CardProspector> lCP = new List<CardProspector>();
         CardProspector tCP;
-        foreach(Card tCD in lCD)
-		{
+        foreach (Card tCD in lCD)
+        {
             tCP = tCD as CardProspector;
             lCP.Add(tCP);
         }
-        return(lCP);
+        return (lCP);
     }
-	//The Draw function will pull a single card from the drawPile and return it
-	CardProspector Draw()
-	{
+    //The Draw function will pull a single card from the drawPile and return it
+    CardProspector Draw()
+    {
         CardProspector cd = drawPile[0]; // Pull the 0th CardProspector
         drawPile.RemoveAt(0); // Then remove it from List<> drawPile
-        return(cd); // And return it
+        return (cd); // And return it
     }
-	//LayoutGame() positions the initial tableau of cards, a.k.a. the "mine"
-	void LayoutGame()
-	{
-		// Create an empty GameObject to serve as an anchor for the tableau // a
+    //LayoutGame() positions the initial tableau of cards, a.k.a. the "mine"
+    void LayoutGame()
+    {
+        // Create an empty GameObject to serve as an anchor for the tableau // a
         if (layoutAnchor == null)
-		{
+        {
             GameObject tGO = new GameObject("_LayoutAnchor");
             // ^ Create an empty GameObject named _LayoutAnchor in the Hierarchy
             layoutAnchor = tGO.transform; // Grab its Transform
@@ -119,7 +122,7 @@ public class Prospector : MonoBehaviour {
         CardProspector cp;
         // Follow the layout
         foreach (SlotDef tSD in layout.slotDefs)
-		{
+        {
             // ^ Iterate through all the SlotDefs in the layout.slotDefs as tSD
             cp = Draw(); // Pull a card from the top (beginning) of the drawPile
             cp.faceUp = tSD.faceUp; // Set its faceUp to the value in SlotDef
@@ -127,9 +130,9 @@ public class Prospector : MonoBehaviour {
             // This replaces the previous parent: deck.deckAnchor, which
             // appears as _Deck in the Hierarchy when the scene is playing.
             cp.transform.localPosition = new Vector3(
-		    layout.multiplier.x * tSD.x,
+            layout.multiplier.x * tSD.x,
             layout.multiplier.y * tSD.y,
-		    -tSD.layerID );
+            -tSD.layerID);
             // ^ Set the localPosition of the card based on slotDef
             cp.layoutID = tSD.id;
             cp.slotDef = tSD;
@@ -141,7 +144,7 @@ public class Prospector : MonoBehaviour {
         //Set which cards are hiding others
         foreach (CardProspector tCP in tableau)
         {
-            foreach(int hid in tCP.slotDef.hiddenBy)
+            foreach (int hid in tCP.slotDef.hiddenBy)
             {
                 cp = FindCardByLayoutID(hid);
                 tCP.hiddenBy.Add(cp);
@@ -186,26 +189,26 @@ public class Prospector : MonoBehaviour {
             cd.faceUp = faceUp; // Set the value on the card
         }
     }
-	//Moves the current target to the discardPile
-	void MoveToDiscard(CardProspector cd)
-	{
+    //Moves the current target to the discardPile
+    void MoveToDiscard(CardProspector cd)
+    {
         // Set the state of the card to discard
         cd.state = eCardState.discard;
         discardPile.Add(cd); // Add it to the discardPile List<>
         cd.transform.parent = layoutAnchor; // Update its transform parent
         // Position this card on the discardPile
         cd.transform.localPosition = new Vector3(
-			            layout.multiplier.x * layout.discardPile.x,
-						            layout.multiplier.y * layout.discardPile.y,
-									            -layout.discardPile.layerID + 0.5f);
+                        layout.multiplier.x * layout.discardPile.x,
+                                    layout.multiplier.y * layout.discardPile.y,
+                                                -layout.discardPile.layerID + 0.5f);
         cd.faceUp = true;
         // Place it on top of the pile for depth sorting
         cd.SetSortingLayerName(layout.discardPile.layerName);
         cd.SetSortOrder(-100 + discardPile.Count);
     }
-	//Make cd the new target card
-	void MoveToTarget(CardProspector cd)
-	{
+    //Make cd the new target card
+    void MoveToTarget(CardProspector cd)
+    {
         // If there is currently a target card, move it to discardPile
         if (target != null) MoveToDiscard(target);
         target = cd; // cd is the new target
@@ -335,11 +338,11 @@ public class Prospector : MonoBehaviour {
         {
             gameOverText.text = "Game Over";
             if (ScoreManager.HIGH_SCORE <= score)
-        {
+            {
                 roundResultText.text = "You got the high score!\nHigh score: " + score;
             }
             else
-        {
+            {
                 roundResultText.text = "Your final score was: " + score;
             }
             ShowResultsUI(true);
@@ -420,11 +423,12 @@ public class Prospector : MonoBehaviour {
                 {
                     fsRun = fs;
                     fsRun.reportFinishTo = null;
-                } else
+                }
+                else
                 {
                     fs.reportFinishTo = fsRun.gameObject;
                 }
                 break;
         }
     }
-	}
+}
